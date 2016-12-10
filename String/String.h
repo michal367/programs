@@ -50,7 +50,7 @@ public:
     void insert(std::size_t n, char c);
     void erase(std::size_t n, std::size_t len = npos);
 
-    char* c_str();
+    const char* c_str();
 
     std::size_t find(std::size_t pos, const String& s);
     std::size_t find(std::size_t pos, const char* s);
@@ -453,7 +453,7 @@ void String::erase(std::size_t n, std::size_t len)
 }
 
 
-char* String::c_str()
+const char* String::c_str()
 {
     return str;
 }
